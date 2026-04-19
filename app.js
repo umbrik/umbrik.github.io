@@ -357,7 +357,7 @@ async function cmdProjects() {
       '<div class="project-title">' + escapeHTML(project.title) + '</div>' +
       '<div class="project-description">' + escapeHTML(project.description) + '</div>' +
       '<a class="project-link" href="' + escapeHTML(project.url) + '" target="_blank" rel="noopener">' +
-      escapeHTML(DATA.ui.projectLink) + ' <span class="dim">→</span> ' + escapeHTML(displayUrl) +
+      escapeHTML(DATA.ui.projectLink) +
       '</a>' +
       '</div>';
   }
