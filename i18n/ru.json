@@ -36,6 +36,11 @@
         "title": "Litd",
         "description": "Приватный видеочат с шифрованием.",
         "url": "https://litd.app"
+      },
+      {
+        "title": "Neat",
+        "description": "Инструмент для управления медиатекой.",
+        "url": "https://neat-media-library.github.io/"
       }
     ],
     "contacts": {
