@@ -1,0 +1,70 @@
+{
+  "user": "duplenskikh",
+  "greeting": "Hey! I'm Ivan Duplenskikh - welcome to my CV.",
+  "summary": {
+    "about": "Developer focused on tooling, infrastructure, and automating complex workflows.",
+    "stack": "dotnet · Node.js"
+  },
+  "details": {
+    "about": [
+      "Software engineer at Microsoft, working on Azure DevOps.",
+      "",
+      "My area is dev tooling and infrastructure - building",
+      "things that help other engineers ship faster and with",
+      "less friction.",
+      "",
+      "I care about reliable systems, clean automation,",
+      "and keeping things simple where possible."
+    ],
+    "role": {
+      "company": "Microsoft",
+      "title": "Software Engineer",
+      "period": "2025 - Present",
+      "description": [
+        "Developer on Azure DevOps, building one of the core",
+        "components - Releases - and working on internal tooling."
+      ]
+    },
+    "stack": {
+      "Languages": ["C#", "TypeScript", "Python", "Go"],
+      "Frontend": ["React", "Svelte"],
+      "Backend": ["ASP.NET", "Node.js", "MS SQL", "Redis"],
+      "DevOps": ["Azure Pipelines", "Docker", "Kubernetes", "GitHub Actions", "Azure Cloud"]
+    },
+    "projects": [
+      {
+        "title": "Litd",
+        "description": "Encrypted peer-to-peer video chat.",
+        "url": "https://litd.app"
+      }
+    ],
+    "contacts": {
+      "Email": "job@duplenskikh.com",
+      "GitHub": "https://github.com/ivanduplenskikh",
+      "LinkedIn": "https://linkedin.com/in/duplenskikh",
+      "Telegram": "https://t.me/duplenskikh"
+    }
+  },
+  "commands": {
+    "/about": "Learn more about me",
+    "/role": "Current job details",
+    "/stack": "Full tech stack breakdown",
+    "/projects": "Pet projects and subprojects",
+    "/contacts": "Ways to reach me",
+    "/lang": "Switch language (en/ru)",
+    "/skip": "Toggle animation skip",
+    "/clear": "Clear the terminal",
+    "/help": "Show available commands"
+  },
+  "ui": {
+    "tip": "Click a command or type it below. Try",
+    "available": "Available commands:",
+    "unknown": "Unknown command:",
+    "unknownHint": "Type \"/help\" to see available commands.",
+    "loading": "Loading",
+    "fetching": "Fetching profile...",
+    "langSwitched": "Language switched to English.",
+    "projectLink": "Open project",
+    "projectsEmpty": "No projects added yet."
+  }
+}

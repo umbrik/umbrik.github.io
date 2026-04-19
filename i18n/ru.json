@@ -1,0 +1,70 @@
+{
+  "user": "duplenskikh",
+  "greeting": "Привет! Я Иван Дупленских - добро пожаловать в мое CV.",
+  "summary": {
+    "about": "Разработчик с фокусом на тулинг, инфраструктуру и автоматизацию процессов.",
+    "stack": "dotnet · Node.js"
+  },
+  "details": {
+    "about": [
+      "Разработчик в Microsoft, работаю в Azure DevOps.",
+      "",
+      "Занимаюсь dev-тулингом и инфраструктурой — делаю",
+      "инструменты, которые помогают другим инженерам",
+      "выпускать код быстрее и с меньшими затратами.",
+      "",
+      "Ценю надёжные системы, чистую автоматизацию",
+      "и простоту там, где это возможно."
+    ],
+    "role": {
+      "company": "Microsoft",
+      "title": "Software Engineer",
+      "period": "2025 - настоящее время",
+      "description": [
+        "Разработчик в Azure DevOps, создаю один из ключевых",
+        "компонентов - Releases - и работаю над внутренним тулингом."
+      ]
+    },
+    "stack": {
+      "Языки": ["C#", "TypeScript", "Python", "Go"],
+      "Фронтенд": ["React", "Svelte"],
+      "Бэкенд": ["ASP.NET", "Node.js", "MS SQL", "Redis"],
+      "DevOps": ["Azure Pipelines", "Docker", "Kubernetes", "GitHub Actions", "Azure Cloud"]
+    },
+    "projects": [
+      {
+        "title": "Litd",
+        "description": "Приватный видеочат с шифрованием.",
+        "url": "https://litd.app"
+      }
+    ],
+    "contacts": {
+      "Email": "job@duplenskikh.com",
+      "GitHub": "https://github.com/ivanduplenskikh",
+      "LinkedIn": "https://linkedin.com/in/duplenskikh",
+      "Telegram": "https://t.me/duplenskikh"
+    }
+  },
+  "commands": {
+    "/about": "Подробнее обо мне",
+    "/role": "Текущая работа",
+    "/stack": "Полный стек технологий",
+    "/projects": "Пет-проекты и сабпроекты",
+    "/contacts": "Контакты",
+    "/lang": "Сменить язык (en/ru)",
+    "/skip": "Вкл/выкл пропуск анимаций",
+    "/clear": "Очистить терминал",
+    "/help": "Показать команды"
+  },
+  "ui": {
+    "tip": "Нажмите на команду или введите её. Попробуйте",
+    "available": "Доступные команды:",
+    "unknown": "Неизвестная команда:",
+    "unknownHint": "Введите \"/help\" чтобы увидеть команды.",
+    "loading": "Загрузка",
+    "fetching": "Загрузка профиля...",
+    "langSwitched": "Язык изменён на русский.",
+    "projectLink": "Открыть проект",
+    "projectsEmpty": "Проекты пока не добавлены."
+  }
+}

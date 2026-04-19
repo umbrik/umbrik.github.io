@@ -1,0 +1,288 @@
+/* ── Reset & Base ─────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0d1117;
+  color: #c9d1d9;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* ── Terminal Container ──────────────────────────────── */
+#terminal {
+  width: 100%;
+  max-width: 780px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ── Lines ────────────────────────────────────────────── */
+.line {
+  min-height: 1.65em;
+  position: relative;
+}
+
+.line.empty {
+  height: 1.65em;
+}
+
+/* ── Prompt ───────────────────────────────────────────── */
+.prompt {
+  color: #3fb950;
+}
+
+.prompt .path {
+  color: #58a6ff;
+}
+
+.prompt .arrow {
+  color: #3fb950;
+  font-weight: 700;
+}
+
+/* ── Section Headers ─────────────────────────────────── */
+.section-header {
+  color: #58a6ff;
+  font-weight: 700;
+  margin-top: 0.3em;
+}
+
+.section-divider {
+  color: #30363d;
+}
+
+/* ── Text Colors ─────────────────────────────────────── */
+.dim {
+  color: #8b949e;
+}
+
+.highlight {
+  color: #d2a8ff;
+}
+
+.keyword {
+  color: #ff7b72;
+}
+
+.success {
+  color: #3fb950;
+}
+
+.warning {
+  color: #d29922;
+}
+
+.info {
+  color: #58a6ff;
+}
+
+.label {
+  color: #79c0ff;
+}
+
+.value {
+  color: #c9d1d9;
+}
+
+/* ── Links ────────────────────────────────────────────── */
+.line a {
+  color: #58a6ff;
+  text-decoration: none;
+  border-bottom: 1px dotted #58a6ff44;
+  transition: border-color 0.2s;
+}
+
+.line a:hover {
+  border-bottom-color: #58a6ff;
+}
+
+/* ── Blinking Cursor ─────────────────────────────────── */
+.cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.1em;
+  background: #c9d1d9;
+  vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+/* ── Spinner ──────────────────────────────────────────── */
+.spinner {
+  color: #d29922;
+  display: inline;
+}
+
+/* ── Tags / Badges ───────────────────────────────────── */
+.tag {
+  display: inline-block;
+  background: #21262d;
+  color: #79c0ff;
+  padding: 0.05em 0.5em;
+  border-radius: 3px;
+  margin: 0 0.25em 0.25em 0;
+  font-size: 0.9em;
+}
+
+/* ── Job Card ─────────────────────────────────────────── */
+.job-company {
+  color: #d2a8ff;
+  font-weight: 700;
+}
+
+.job-role {
+  color: #c9d1d9;
+}
+
+.job-period {
+  color: #8b949e;
+}
+
+/* ── Project Tiles ───────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-left: 2ch;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  background:
+    linear-gradient(180deg, rgba(88, 166, 255, 0.06), rgba(13, 17, 23, 0.04)),
+    #161b22;
+  box-shadow: inset 0 1px 0 rgba(240, 246, 252, 0.03);
+}
+
+.project-title {
+  color: #d2a8ff;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.project-description {
+  color: #c9d1d9;
+  margin-bottom: 0.65rem;
+  white-space: normal;
+}
+
+.project-link {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 600px) {
+  html {
+    font-size: 13px;
+  }
+
+  body {
+    padding: 1rem 0.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+
+  .project-tile {
+    padding: 0.8rem 0.85rem;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* ── Clickable Commands ────────────────────────────────── */
+.cmd-link {
+  color: #58a6ff;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dashed #58a6ff66;
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.cmd-link:hover {
+  color: #79c0ff;
+  border-bottom-color: #79c0ff;
+}
+
+/* ── Particle Canvas ───────────────────────────────────── */
+.snap-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ── Selection ────────────────────────────────────────── */
+::selection {
+  background: #264f78;
+  color: #ffffff;
+}
+
+/* ── Interactive Input ────────────────────────────────── */
+.input-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.cli-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #c9d1d9;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  flex: 1;
+  caret-color: #c9d1d9;
+  padding: 0;
+  margin: 0;
+}
+
+.cli-input::placeholder {
+  color: #484f58;
+}
