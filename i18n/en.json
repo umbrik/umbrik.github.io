@@ -44,7 +44,7 @@
       },
       {
         "title": "shrinker",
-        "description": "Shrinker filters verbose command output before sending to LLMs, reducing token usage - completely local",
+        "description": "Filters verbose command output before sending to LLMs, reducing token usage - completely local",
         "url": "https://github.com/ivanduplenskikh/shrinker"
       }
     ],
