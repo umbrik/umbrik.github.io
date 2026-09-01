@@ -44,7 +44,7 @@
       },
       {
         "title": "shrinker",
-        "description": "Фильтрует подробный вывод команд перед отправкой в LLM, сокращая количество токенов - полностью локально",
+        "description": "Фильтрует подробный вывод команд перед отправкой в LLM",
         "url": "https://github.com/ivanduplenskikh/shrinker"
       }
     ],
