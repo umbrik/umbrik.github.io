@@ -41,6 +41,11 @@
         "title": "Neat",
         "description": "Media library management tool.",
         "url": "https://neat-media-library.github.io/"
+      },
+      {
+        "title": "shrinker",
+        "description": "Shrinker filters verbose command output before sending to LLMs, reducing token usage - completely local",
+        "url": "https://github.com/ivanduplenskikh/shrinker"
       }
     ],
     "contacts": {

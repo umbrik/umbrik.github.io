@@ -41,6 +41,11 @@
         "title": "Neat",
         "description": "Инструмент для управления медиатекой.",
         "url": "https://neat-media-library.github.io/"
+      },
+      {
+        "title": "shrinker",
+        "description": "Shrinker фильтрует подробный вывод команд перед отправкой в LLM, сокращая количество токенов - полностью локально",
+        "url": "https://github.com/ivanduplenskikh/shrinker"
       }
     ],
     "contacts": {
